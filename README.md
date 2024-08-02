@@ -1,4 +1,4 @@
-# cv
+# CV
 Resume template
 
 Add a line due to request from reviewer
