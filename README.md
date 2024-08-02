@@ -1,11 +1,11 @@
-# CV
-Resume template
+# Personal Information
+Name:
+E-mail:
+Phone:
 
-To be completed.
+# Education
 
-Add a line due to request from reviewer
+# Experiences
 
-New line after PR
-
-Adding new line after green light from review process
+# References
 
