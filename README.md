@@ -6,6 +6,8 @@ E-mail:
 Phone:
 
 # Education
+B.Sc.:
+M.Sc.:
 
 # Experiences
 
