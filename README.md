@@ -17,9 +17,9 @@ M.Sc.:
 ## Company #2
 
 # References
-## Ref #1
+Ref #1
 
-## Ref #2
+Ref #2
 
-## Ref #3
+Ref #3
 
