@@ -1,5 +1,6 @@
 <!-- using https://github.com/FastLED/FastLED as the starting point -->
-# PT
+Particle Tracking (PT)
+===
 <!--
 ============
 [![arduino-library-badge](https://www.ardu-badge.com/badge/FastLED.svg)](https://www.ardu-badge.com/FastLED)
@@ -10,10 +11,12 @@
 <!-- [![Documentation](https://img.shields.io/badge/any_text-you_like-blue)](http://fastled.io/docs) -->
 [![Documentation](https://img.shields.io/badge/Docs-Doxygen-blue)](http://fastled.io/docs)
 
-# Overview
+Overview
+---
 This is a library for simulating motion of finite-size particles in fluid flow. The underlying algorithm takes into account interactions between particles and solid objects existing inside computational domain. The method includes a computationally-efficient, two-step search algorithm to mitigate the efficiency problems associated with the auxiliary structured grid (ASG) search algorithm when pinpointing hosting cell for a given location, in conjunction with a boundary condition to capture interactions between particle and solid objects.
 
-## Importance
+Importance
+---
 Particle-wall interactions play a crucially important role in different applications such as microfluidic devices for
 - cell sorting,
 - particle separation,
@@ -21,7 +24,8 @@ Particle-wall interactions play a crucially important role in different applicat
 
 Yet, accurate implementation of particle-wall interactions is not trivial when working with currently available algorithms/packages as they typically work with point-wise particles.
 
-## Current specifications
+Current specifications
+---
 - **One-way coupling;** fluid flow is not affected by particles.
 - **Hybrid unstructured mesh** consisting of triangular and/or quadrilateral cells can be processed.
 - **Ansys mesh** can be processed.
@@ -35,13 +39,29 @@ Yet, accurate implementation of particle-wall interactions is not trivial when w
   - **streakline** for multiple particles with similar or various attributes, _e.g._, diameter, density, etc.
   - **arbitrary configurations** from a text file with various attributes, _e.g._, diameter, density, injection speed, etc.
 
+What to expect
+---
+Here are multiple examples to give you some idea of the type of problems that can be addressed currently by using this library:
+
+### Particle motion within microfluidic deterministic lateral displacement (DLD) device
+Image of mesh
+
+Image of particle trajectory
+
+### Particle motion within microfluidic device with pinched flow
+Image of mesh
+
+Image of particle trajectory
+
+
 > [!WARNING]
 > The library has currently multiple limitations including:
 > - It runs two-dimensional modeling. So, three-dimensional problems cannot be solved. 
-> - It does not have a solver for fluid flow. Thus, fluid flow equations need to be solved, first, by using other packages, _e.g._ OpenFOAM, Ansys, COMSOL, etc., before using the library.
+> - It does not have a solver for fluid flow. Thus, fluid flow equations need to be solved, first, by using other packages, _e.g._, OpenFOAM, Ansys, COMSOL, etc., before using the library.
 > - Only Ansys format is currently supported for mesh and fluid flow solution files.
 
-# Getting Started
+Getting Started
+---
 Install the library using either [the .zip file from the latest release](https://github.com/FastLED/FastLED/releases/latest/) or by searching for "FastLED" in the libraries manager of the Arduino IDE. [See the Arduino documentation on how to install libraries for more information.](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
 
 How quickly can you get up and running with the library?  Here's a simple blink program:
